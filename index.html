@@ -5,19 +5,47 @@
     <meta name="viewport" content="width=device-width", initial scale=1.0 />
     <title>Survey Form</title>
     <link href="styles.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/514092c6c4.js" crossorigin="anonymous"></script>
     </head>
     <body>
-      <h1 id="title">Survey-Form</h1>
+
+      <!-- Main Page-->
+      <main>
+
+        <!-- Header of the page -->
+      <h1 id="title">freeCodeCamp Survey-Form</h1>
       <p id="description">Thank you for taking the time to help us improve the platform</p> 
+      <!-- Header of the page ends-->
+
+      <!-- Handle card component-->
       <form id="survey-form">
+
+       <!-- First fieldset--> 
       <fieldset>
-        <label id="name-label">Name <input type="text" id="name" name="name-label" placeholder="first name" required/></label>
-        <label id="email-label">Email <input type="email" id="email"  name="email-label" placeholder="email" required /></label>
-        <label id="number-label">Age(optional) <input type="number"id="number" name="age" min="13" max="120" placeholder="age in years" /></label>
+        <!-- Name input--> 
+        <label id="name-label">
+          Name 
+          <input type="text" id="name" name="name-label" placeholder="Enter your name" required/>
+          </label>
+
+          <!-- Email input-->
+        <label id="email-label">
+          Email 
+          <input type="email" id="email"  name="email-label" placeholder="Enter your email" required />
+          </label>
+
+          <!-- Age input-->
+        <label id="number-label">
+          Age(optional) 
+          <input type="number"id="number" name="age" min="13" max="120" placeholder="age" />
+          </label>
         </fieldset>
+        <!-- first fieldset Ends--> 
+
+        <!-- Second fieldset--> 
         <fieldset>
         <label>Which option best describe your current role?
-          <select id="dropdown" >
+        <select id="dropdown" >
             <option value="">Select current role</option>
             <option value="1">Student</option>
             <option value="2">Full Time Job</option>
@@ -27,26 +55,44 @@
           </select>
         </label>
       </fieldset>
+      <!-- Second fieldset Ends-->
+
+      <!-- Third fieldset-->  
       <fieldset>
-        <label>Would you recommend freeCodeCamp to a friend?
-        <lable><input type="radio" name="recommendation-type" value="value"> Definitely</input></lable>
-          <lable><input type="radio" name="recommendation-type" value="value"> Maybe</input></lable>
-          <lable><input type="radio" name="recommendation-type" value="value"> Not sure</input></lable>
+        <label>
+          <div class="dropdown-description">Would you recommend freeCodeCamp to a friend?</div>
+          <lable>
+            <input type="radio" name="recommendation-type" value="value" checked> Definitely</input>
+          </lable>
+          <lable>
+            <input type="radio" name="recommendation-type" value="value"> Maybe</input>
+          </lable>
+          <lable>
+            <input type="radio" name="recommendation-type" value="value"> Not sure</input>
+          </lable>
         </label>
       </fieldset>
+      <!-- Third fieldset Ends-->  
+
+      <!-- Fourth fieldset-->  
       <fieldset>
-        <label>What is your favorite feature of freeCodeCamp?
+        <label>
+          <div class="dropdown-description">What is your favorite feature of freeCodeCamp?</div>
           <select id="dropdown">
             <option value="">Select an option</option>
             <option value="value">Challenges</option>
             <option value="value">Projects</option>
             <option value="value">Community</option>
             <option value="value">Open Source</option>
-            </select>
+          </select>
         </label>
       </fieldset>
+      <!-- Fourth fieldset Ends--> 
+
+      <!-- Fifth fieldset--> 
       <fieldset>
-        <label>What would you like to see improved? (Check all that apply)
+        <label>
+          <div class="dropdown-description">What would you like to see improved? (Check all that apply)</div>
         <lable><input type="checkbox" value="value" />Front-end Projects</lable>
         <lable><input type="checkbox" value="value" />Back-end Projects</lable>
         <lable><input type="checkbox" value="value" />Data Visualizaton</lable>
@@ -60,10 +106,29 @@
        <lable> <input type="checkbox" value="value" />Additional Courses</lable>
       </label>
       </fieldset>
+      <!-- Fifth fieldset Ends -->
+
+      <!-- Sixth fieldset-->  
       <fieldset>
-        <label>Any comments or suggestions? <textarea name="comments"  ></textarea>
-          </label></fieldset>
-      <input type="submit" value="submit" id="submit" />
+        <label>
+          <div class="dropdown-description">Any comments or suggestions? </div>
+          <textarea name="comments"  ></textarea>
+        </label>
+      </fieldset>
+      <!-- Sixth fieldset Ends -->  
+
+      <!-- Submit Button-->  
+      <fieldset>
+      <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+      
       </form>
+      <!-- card component Ends -->
+
+      <!-- Programmer credit -->
+      <footer>
+        <i class="fa-regular fa-copyright"></i> Programmer: Dickson Owusu Nyantakyi
+      </footer>
+      </main>
     </body>
   </html>
